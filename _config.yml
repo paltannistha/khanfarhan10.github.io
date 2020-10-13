@@ -297,6 +297,23 @@ compress_html:
   ignore:
     envs: development
 
+collections:
+  research:
+    output: true
+    permalink: /:categories/:title/
+  projects:
+    output: true
+    permalink: /:categories/:title/
+  courses:
+    output: true
+    permalink: /:categories/:title/
+  achievements:
+    output: true
+    permalink: /:categories/:title/
+  gallery:
+    output: true
+    permalink: /:categories/:title/
+
 # Defaults
 defaults:
   # _posts
@@ -335,7 +352,7 @@ defaults:
   # _courses
   - scope:
       path: "_courses"
-      type: posts
+      type: courses
     values:
       layout: single
       author_profile: true
